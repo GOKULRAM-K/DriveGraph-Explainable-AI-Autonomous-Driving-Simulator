@@ -1,0 +1,28 @@
+{
+  "name": "drivegraph-xai-simulator",
+  "version": "1.0.0",
+  "description": "DriveGraph: Explainable AI (XAI) Autonomous Driving & Spatial Perception Simulator in Vanilla JS & HTML5 Canvas",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 .",
+    "serve": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "self-driving-car",
+    "autonomous-vehicles",
+    "neural-network",
+    "genetic-algorithm",
+    "vehicle-kinematics",
+    "openstreetmap",
+    "canvas-2d",
+    "graph-theory",
+    "ray-casting",
+    "simulation"
+  ],
+  "author": "Dr. Vignesh Vehicle Controls Lab",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
