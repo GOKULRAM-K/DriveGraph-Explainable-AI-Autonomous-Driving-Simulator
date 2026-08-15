@@ -235,9 +235,8 @@ virtualworld/
 
 ## 📜 Academic Attribution & Credits
 
-Developed as part of research into autonomous vehicle control algorithms and spatial simulation modeling under **Dr. Vignesh Vehicle Controls Laboratory**.
+Developed as part of research into autonomous vehicle control algorithms and spatial simulation modeling.
 
-- **Primary Author / Lab**: Dr. Vignesh Vehicle Controls Related Research Group
 - **License**: [MIT License](LICENSE)
 
 > [!TIP]
