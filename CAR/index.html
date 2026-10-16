@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-      <title>Self-driving car - No libraries</title>
+      <meta charset="UTF-8" />
+      <title>DriveGraph - Autonomous Driving Simulation & Explainable AI</title>
       <link rel="stylesheet" href="style.css" />
    </head>
    <body>
@@ -30,7 +31,7 @@
       <div id="stage">
          <canvas id="carCanvas"></canvas>
          <div id="verticalButtons" style="display: none">
-            <label for="fileInput" class="file-input-label">
+            <label for="fileInput" class="file-input-label" title="Load .car brain file">
                📁<!--🧠🚙-->
                <input
                   type="file"
@@ -39,18 +40,18 @@
                   onchange="loadCar(event)"
                />
             </label>
-            <button onclick="save()">💾</button>
-            <button onclick="download()">⬇️</button>
-            <button onclick="discard()">🗑️</button>
-            <button onclick="bestCar.damaged=true;">💀</button>
-            <button onclick="nnEditor.zeroAll()">0️⃣</button>
-            <button onclick="nnEditor.markAll()">✅</button>
-            <button onclick="nnEditor.unmarkAll()">✅</button>
-            <button onclick="nnEditor.removeAllSegments()">❌</button>
+            <button title="Save Best Brain (LocalStorage)" onclick="save()">💾</button>
+            <button title="Download .car File" onclick="download()">⬇️</button>
+            <button title="Discard Saved Brain" onclick="discard()">🗑️</button>
+            <button title="Trigger Damage" onclick="bestCar.damaged=true;">💀</button>
+            <button title="Zero All Parameters" onclick="nnEditor.zeroAll()">0️⃣</button>
+            <button title="Mark All Elements for Mutation" onclick="nnEditor.markAll()">✅</button>
+            <button title="Unmark All Elements" onclick="nnEditor.unmarkAll()">⬜</button>
+            <button title="Remove All Network Segments" onclick="nnEditor.removeAllSegments()">❌</button>
             <spacer type="vertical" width="100" height="100"> &nbsp; </spacer>
-            <button onclick="openOptionsPanel()">⚙️</button>
+            <button title="Simulation Options" onclick="openOptionsPanel()">⚙️</button>
             <spacer type="vertical" width="100" height="100"> &nbsp; </spacer>
-            <label for="fileInput2" class="file-input-label">
+            <label for="fileInput2" class="file-input-label" title="Load .world file">
                🌎
                <input
                   type="file"
@@ -60,8 +61,8 @@
                />
             </label>
             <spacer type="vertical" width="100" height="100"> &nbsp; </spacer>
-            <button onclick="optimize()">⚡</button>
-            <button onclick="test()">🔎</button>
+            <button title="Optimize (Run Evolutionary Population)" onclick="optimize()">⚡</button>
+            <button title="Reset / Test Simulation" onclick="test()">🔎</button>
             <input
                id="mutationSld"
                type="range"
@@ -69,6 +70,7 @@
                min="0"
                max="100"
                value="20"
+               title="Mutation Amount Slider"
                onchange="updateMutation()"
             />
          </div>
